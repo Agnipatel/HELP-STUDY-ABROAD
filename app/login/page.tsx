@@ -31,7 +31,7 @@ export default function LoginPage() {
 
   return (
     <Box className="max-w-md mx-auto mt-12">
-      <Typography variant="h4" gutterBottom>Admin Login</Typography>
+      <Typography variant="h4" gutterBottom>Admin Login </Typography>
       <form onSubmit={submit} className="space-y-4">
         <TextField fullWidth label="Username" value={form.username}
           onChange={(e) => setForm({ ...form, username: e.target.value })}/>

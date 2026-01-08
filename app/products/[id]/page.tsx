@@ -12,7 +12,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
     fetchProductById(Number(params.id)).then(setProduct);
   }, [params.id, fetchProductById]);
 
-  if (!product) return <div>Loading...</div>;
+  if (!product) return <div>Loading..</div>;
 
   return (
     <Box className="p-6">
